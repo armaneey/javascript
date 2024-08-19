@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<style>
+    body{
+        display: grid;
+        gap: 2rem;
+        padding: 0 2rem;
+    }
+    input{
+        padding: 1rem;
+        border-radius: 10px;
+        border: 2px solid rgb(78, 7, 78);
+    }
+
+    .buttons{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .output{
+        background-color: azure;
+        height: 200px;
+        border-radius: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid blueviolet;
+        color: black;
+    }
+
+    button{
+        border: none;
+        font-size: 1rem;
+        padding: 1rem;
+        border-radius: 10px;
+        height: 50px;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+
+    .filled{
+        background-color: papayawhip;
+        color: black;
+    }
+
+    .outlined{
+        color: black;
+        border: 1px solid papayawhip;
+        background-color: bisque;
+    }
+</style>
+<body>
+   <h1>Small Calculator</h1> 
+   <h2 class="output">40</h2>
+    <input type="number" placeholder="first value" class="firstval">
+    <input type="number" placeholder="second value" class="secondval">
+    <div class="buttons">
+   <button class="divion filled" onclick="divisionfunction()">/</button>
+   <button class="multiplication outlined" onclick="multiplicationfunction()">*</button>
+   <button class="percentage outlined" onclick="percentagefunction()">%</button>
+</div>
+<button class="equal to filled" onclick="equaltofunction()">=</button>
+
+<script src="script.js"></script>
+</body>
+</html>
